@@ -1,0 +1,464 @@
+/* Left & Right alignment */
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.wrapper {
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+/* Global properties ======================================================== */
+body, html{
+	min-width:970px;
+	min-height:875px;
+}
+body {
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	border:0;
+	color:#cacaca;
+	font:12px/18px  Tahoma, sans-serif;
+}
+/* Global Structure ============================================================= */
+.glob {
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	border:0;
+	top: 0;
+	left: 0;
+}
+.page_spinner {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:99;
+	width:100%;
+	height:100%;
+	background:url(../images/main_spinner.gif) 50% 50% no-repeat #020202;
+}
+/* ============================= main layout ====================== */
+a {
+	outline:none;
+	color:#cacaca;
+	text-decoration:none;
+}
+a:hover {
+	color:#F9B233;
+}
+h1 {
+	display:inline-block;
+	padding:0;
+	float: left;
+	padding-left:30px;
+}
+h2 {
+	color:#fff;
+	text-transform:uppercase;
+	font:18px 'Oswald', sans-serif;
+	padding-bottom:25px;
+}
+p { 
+	padding-bottom:17px;
+}
+#page_about .grid_8 p { 
+	padding-bottom:24px;
+}
+#page_catalogue p { 
+	text-align: center;
+	font:18px 'Oswald', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	padding-bottom:10px;
+	margin-top: -8px;
+}
+img { 
+	padding-bottom:22px;
+}
+#page_about .grid_8 img { 
+	padding-bottom:10px;
+}
+.color1{
+	color:#FFFFFF;
+}
+.bold{
+	font-weight: bold;
+}
+.imgIndent{
+	padding-right: 17px;
+}
+.imgIndent2{
+	padding-right: 5px;
+	margin-top: 4px;
+}
+.padBot0{
+	padding-bottom: 0 !important;
+}
+.padBot1{
+	padding-bottom: 4px;
+}
+.padBot2{
+	padding-bottom: 41px !important;
+}
+.padBot3{
+	padding-bottom: 30px;
+}
+.padBot3{
+	padding-bottom: 14px;
+}
+.padTop1{
+	padding-top: 5px;
+}
+.padTop2{
+	padding-top: 23px;
+	padding-right: 23px;
+}
+.marTop1{
+	margin-top: -4px;
+}
+/* ============================= header ====================== */
+header{
+	position: relative;
+	height:126px;
+	text-transform:uppercase;
+	background:url(../images/header_bg.png) repeat-x;
+	padding-top: 30px;
+	margin-top:0%;
+}
+.top_section{
+	width: 100%;
+	background: #6D291B;
+	height: 39px;
+	padding-top: 52px;
+}
+.top_section p{
+	margin-top: -20px;
+	color:#888888;
+	font:18px 'Georgia', sans-serif;
+	padding-right: 10px;
+}
+#logo {
+	position:relative;
+	z-index:5;
+	display:block;
+	overflow:hidden;
+	width:210px;
+	height:89px;
+	background:url(../images/logo.png) 0 0 no-repeat;
+	text-indent:100%;
+	white-space:nowrap;
+}
+/* ============================= menu ====================== */
+.menu {
+	float: right;
+	padding-right:26px;
+}
+#menu > li {
+	position:relative;
+	float:left;
+	padding-left:18px;
+}
+#menu > li > a{
+	position:relative;
+	z-index:1;
+	display:block;
+	padding: 0 10px;
+	padding-top:29px;
+	color:#383c3f;
+	text-align:center;
+	text-decoration:none;
+	font:18px 'Oswald', sans-serif;
+}
+#menu > li > a span{
+	position:absolute;
+	top:-30px;
+	left:0;
+	z-index:-1;
+	width:100%;
+	height:100%;
+	background:url(../images/menu_arrow.png) no-repeat 50% 30px;
+	border-top:3px solid #F9B233;
+}
+.submenu_1 {
+	position:absolute;
+	top:70px;
+	left:20px;
+	z-index:5;
+	padding:3px 0;
+	width:93px;
+	background:#222222;
+	text-transform: none;
+}
+.submenu_1 li {	
+	position:relative;
+	text-align:left;
+	background:url(../images/submenu_line.png) repeat-x 0 bottom;
+}
+.submenu_1 li.last {	
+	background:none;
+}
+.submenu_1 a {
+	position:relative;
+	z-index:1;
+	display:block;
+	padding:7px 0 !important;
+	margin-left: 15px;
+	color:#fff !important;
+	text-decoration:none;
+	font:13px 'Oswald', sans-serif;
+}
+.submenu_1 a b{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	width:100%;
+	height:29px;
+}
+.submenu_1 li>a:hover,.submenu_1 li.sfHover>a{
+	color:#F9B233 !important;
+}
+.submenu_2 {
+	position:absolute;
+	top:0px;
+	left:93px;
+	padding:3px 0;
+	width:76px;
+	background:#372926;
+}
+/* ============================= bgGall ======================= */
+#bgStretch img{
+	background:#000;
+}
+#bgNav {
+	overflow:hidden;
+	height:17px;
+	cursor:default;
+}
+#bgNav li {
+	display:inline-block;
+}
+#bgNav li > a {
+	display:block;
+	width:17px;
+	height:17px;
+	background:url(../images/bg_selector.png) no-repeat right 0;
+}
+#bgNav a:hover, #bgNav .active a {
+	background-position:0 0;
+}
+.gall_spinner {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(../images/gallLoader.gif) 0 0 no-repeat;
+	z-index: 2;
+}
+/* ============================= splash ====================== */
+#splash{
+	position:absolute;
+	z-index:10;
+	width:100%;
+}
+/* ============================= content ====================== */
+#content{
+	position:relative;
+	
+	width:100%;
+}
+#content > ul > li {
+	position:absolute;
+	width:100%;
+	
+}
+#content > ul > li > div{
+	overflow:hidden;
+	background:url(../images/pages_bg.png);
+	height: 100%;
+}
+.cont_pad{
+	padding:59px 20px 10px 40px;
+}
+.cont_pad2{
+	padding:59px 45px 10px 40px;
+}
+a{
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.more{
+	position: relative;
+	display:inline-block;
+	padding:10px 18px;
+	background:url(../images/more_bg.png);
+	margin-left: 9px;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	font:bold 13px/13px 'Oswald', sans-serif;
+}
+.more:hover{
+	color:#F9B233;
+	padding:12px 20px;
+	top:-2px;
+	left:-2px;
+}
+.more2{
+	position: relative;
+	display:inline-block;
+	padding:10px 12px;
+	background:url(../images/more_bg.png);
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	font:12px/12px 'Oswald', sans-serif;
+}
+.more2:hover{
+	color:#F9B233;
+	padding:12px 20px;
+	top:-2px;
+	left:-2px;
+}
+.google_map{
+   width:310px;
+   height:221px;
+   background:#fff;
+}
+.address {
+	padding-top:17px;
+}
+.address > span{
+	display:block;
+	width:190px;
+}
+.mailLink{
+	text-decoration:none;
+}
+/* ============================= lists ====================== */
+.listWithMarker {
+	padding-bottom:31px;
+}
+.listWithMarker li {
+	display:block;
+	padding-bottom:8px;
+}
+.listWithMarker li a {
+	display:inline-block;
+	padding-left:23px;
+	background:url(../images/list_marker.png) 4px 4px no-repeat;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #e4e4e4;
+	font-size: 11px;
+}
+.listWithMarker li a:hover {
+	color:#F9B233;
+	background-position: 10px 4px;
+	padding-left:33px;
+}
+/* ============================= footer ====================== */
+footer {
+	position:absolute;
+	bottom:0;
+	z-index:10;
+	padding:0;
+	width:100%;
+	height:82px;
+	background:url(../images/footer_bg.png) 0 0 repeat-x;
+	font:12px/20px  'Ubuntu Condensed', sans-serif;
+	color:#a4a4a4;
+}
+footer  a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+footer  a:hover{
+	color:#F9B233;
+}
+footer p {
+	padding-top:25px;
+	padding-bottom:0;
+}
+/* ============================= forms ============================= */
+#form1 input {
+	margin:0;
+	padding:8px 0 8px 17px;
+	width:292px;
+	background: url(../images/input_bg.png);
+	box-shadow:none;
+}
+#form1 textarea {
+	overflow:auto;
+	margin:0;
+	height:176px;
+	padding:8px 10px 8px 17px;
+	width:442px;
+	background: url(../images/input_bg.png);
+	line-height:18px;
+	resize:none;
+}
+#form1 label {
+	position:relative;
+	display:inline-block;
+	min-height:37px;
+}
+#form1 .error, #form1 .empty {
+	position:absolute;
+	top:-1px;
+	right: 3px;
+	display:none;
+	font-size:10px;
+	line-height:18px;
+	color:#fff;
+	text-transform:none;
+}
+#form1 .success {
+	position:absolute;
+	width: 309px;
+	height: 106px;
+	background: #000;
+	border: 1px solid #333;
+	z-index: 1;
+	opacity: 0.9;
+}
+#form1 .success .success_txt {
+	position: relative;
+	top: 31%;
+	color:#fff;
+	text-align: center;
+}
+.btns a{
+	margin:1px 20px 0 30px;
+}
+/* Form defaults */
+input, select, textarea {
+	color:#cacaca;
+	font:13px/17px Tahoma, sans-serif;
+}
+.txt_num {
+	width: 53px;
+	height: 53px;
+	float: left;
+	margin-right: 10px;
+	padding-top: 14px;
+	background: url(../images/date_plane.png) no-repeat;
+	font:12px/14px 'Oswald', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+}
+.box {
+	overflow:hidden;
+}
